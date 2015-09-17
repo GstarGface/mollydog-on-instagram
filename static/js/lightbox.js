@@ -77,7 +77,7 @@ xhr.onload = function(){
 // 	type: "GET",
 // 	dataType: "jsonp",
 // 	cache: false,
-// 	url: "https://api.instagram.com/v1/tags/mollydog/media/recent?client_id=38070e79b7d74ab697a158d80d1c7a66",
+// 	url: "https://api.instagram.com/v1/tags/mollydog/media/recent?client_id=MY_CLIENT_ID_GOES_HERE",
 // 	success: function(response) {
 // 	  	photoData = response.data;
 // 	  	index = -1;
