@@ -1,0 +1,118 @@
+@import url(http://fonts.googleapis.com/css?family=Loved+by+the+King);
+
+body{
+	background-color: #E8E8E8;
+	font-family: 'loved by the king', sans-serif;	
+}
+.header{
+	font-weight: 400;
+	color: #BBB;
+	font-size: 80px;
+	text-shadow: 2px 2px #FFF;
+	letter-spacing: 5px;
+	text-align: center;
+
+/*	-webkit-transform: rotate(-35deg);
+	-moz-transform: rotate(-35deg);
+	-ms-transform: rotate(-35deg);*/
+}
+
+.header:hover{
+	color: #d7fde0;
+	text-shadow: 2px 2px #ccc;
+
+}
+.container {
+	margin: auto;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+	width:80%;
+	height:80%;
+	padding: 30px;
+	background: transparent;
+	border: 2px #000;
+	margin-bottom: 30px;
+}
+
+#photo-box {
+	float:left;
+	margin:10px auto;
+	display:block;
+	position:center;
+	width:640;
+	height: 700;
+	padding: 2em;
+  	background: #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 1px 3px 3px rgba(0,0,0,0.25);
+	-moz-box-shadow: 1px 3px 3px rgba(0,0,0,0.25);
+	box-shadow: 1px 3px 3px rgba(0,0,0,0.25);
+}
+.button{
+	float:left;
+	margin: 50px auto;
+	position: relative;
+	display: block;
+	width: 100px;
+	height: 73px;
+}
+.last.round{
+	background-color: rgba(111,183,233,1);
+	color: rgba(0,63,71,1);
+	border-color: rgba(0,63,71,.2);
+}
+.last.round:hover{
+	color: rgba(0,63,71,.6);
+}
+.next.round{
+	background-color: rgba(189,252,204,1);
+	color: rgba(0,63,71,1);
+	border-color: rgba(0,63,71,.2);
+}
+.next.round:hover{
+	color: rgba(0,63,71,.6);
+}
+.round {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 30px;		
+	text-decoration: none;		
+	text-align: center;
+	font-size: 30px;		
+	text-shadow: 0 1px 0 rgba(255,255,255,0.7);
+	letter-spacing: 1px;	
+	-webkit-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+	box-shadow: 2px 2px 7px rgba(0,0,0,0.2);
+	border-radius: 300px;
+	border-width: 6px;
+	border-style: solid;
+}
+.round:hover {
+	width: 130%;
+	height: 130%;
+	left: -15%;
+	top: -15%;
+	font-size: 37px;
+	padding-top: 38px;
+	border-width: 9px;
+	-webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+	-o-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+	-moz-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+	box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+	border-size: 10px;
+	-webkit-transform: rotate(-360deg);
+	-moz-transform: rotate(-360deg);
+	-o-transform: rotate(-360deg);
+	transform: rotate(-360deg);
+}
