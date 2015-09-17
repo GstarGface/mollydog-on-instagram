@@ -37,8 +37,7 @@ body{
 }
 
 #photo-box {
-	overflow: scroll;
-	overflow-y: scroll;
+	overflow: auto;
 	float:left;
 	margin:10px auto;
 	display:block;
