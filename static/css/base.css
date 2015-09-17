@@ -37,6 +37,7 @@ body{
 }
 
 #photo-box {
+	overflow:scroll;
 	float:left;
 	margin:10px auto;
 	display:block;
