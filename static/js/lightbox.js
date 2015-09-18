@@ -16,7 +16,7 @@ function swapPic(index){
 // swaps out image displayed in lightbox for next image in photoData array
 function getNext(evt){
 	index++;
-	if (index === photoData.length){
+	if (index === Object.keys(photoData).length){
 		index = 0;
 	};
 	swapPic(index);
@@ -25,8 +25,8 @@ function getNext(evt){
 // swaps out image displayed in lightbox for last image in photoData array
 function getLast(evt){
 	index--;
-	if (index === -1){
-		index = photoData.length -1;
+	if (index < 0){
+		index = Object.keys(photoData).length -1;
 	};
 	swapPic(index);
 };
