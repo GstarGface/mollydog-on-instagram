@@ -1,13 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Loved+by+the+King);
 
 body{
-	background-color: #E8E8E8;
+	background-color: rgba(0,0,0,0.15);
 	font-family: 'loved by the king', sans-serif;	
 }
+/*Header Styling*/
 .header {
 	padding-top: 20px;
+	padding-bottom: 10px;
 	font-weight: 400;
-	color: #BBB;
+	color: #AAA;
 	font-size: 80px;
 	text-shadow: 2px 2px #FFF;
 	letter-spacing: 5px;
@@ -22,8 +24,8 @@ body{
 	color: #d7fde0;
 	text-shadow: 2px 2px #cbb;
 }
-
-.container {
+/*Container div main content*/
+.container {	
 	text-align: center;
 	margin: auto;
   	top: 0;
@@ -31,15 +33,15 @@ body{
   	bottom: 0;
   	left: 0;
 	width:100%;
-	height:700px;
+	min-height: 100%;
 	padding: 30px;
-	background: transparent;
 	border: 2px #000;
-	margin-bottom: 30px;
+	margin-bottom: -100px;
 }
+/*Divs to align the elements inside the container. For small/mobile screens, buttons realign on the left*/
 #align1{
 	float:left;
-	width:25%;
+	width:20%;
 	text-align: center;
 }
 #align2{
@@ -47,20 +49,22 @@ body{
 	float:left;
 	width:640;
 	text-align:center;
+	background: rgba(0,0,0,0.15);
 }
 #align3{
 	float:left;
-	width:25%;
+	width:20%;
 	text-align:center;
 }
+/*Border shaded box to contain the dynamically generated image*/
 #photo-box {
-	overflow: scroll;
+	z-index:1004;
 	float:left;
 	margin:0 auto;
 	display:block;
 	position:center;
 	width:640;
-	height: 675;
+	min-height: 670;
 	padding: 1em;
   	background: #fff;
 	-webkit-border-radius: 4px;
@@ -70,28 +74,15 @@ body{
 	-moz-box-shadow: 2px 2px  6px 6px rgba(0,0,0,0.35);
 	box-shadow: 2px 2px 6px 6px rgba(0,0,0,0.35);
 }
+
+/*Spinning Buttons!*/
 .button{
+	z-index:1002;
 	margin: 0 auto;
 	position:relative;
 	display: block;
 	width: 100px;
 	height: 73px;
-}
-.last.round{
-	background-color: rgba(111,183,233,1);
-	color: rgba(0,63,71,1);
-	border-color: rgba(0,63,71,.2);
-}
-.last.round:hover{
-	color: rgba(0,63,71,.6);
-}
-.next.round{
-	background-color: rgba(189,252,204,1);
-	color: rgba(0,63,71,1);
-	border-color: rgba(0,63,71,.2);
-}
-.next.round:hover{
-	color: rgba(0,63,71,.6);
 }
 .round {
 	display: inline-block;
@@ -133,14 +124,36 @@ body{
 	-o-transform: rotate(-360deg);
 	transform: rotate(-360deg);
 }
+
+/*Button to go back to previous image is light blue*/
+.last.round{
+	background-color: rgba(111,183,233,1);
+	color: rgba(0,63,71,1);
+	border-color: rgba(0,63,71,.2);
+}
+.last.round:hover{
+	color: rgba(0,63,71,.6);
+}
+
+/*Button to go to the next image is aqua*/
+.next.round{
+	background-color: rgba(189,252,204,1);
+	color: rgba(0,63,71,1);
+	border-color: rgba(0,63,71,.2);
+}
+.next.round:hover{
+	color: rgba(0,63,71,.6);
+}
+
+/*Footer Div Element*/
 .footer{
 	line-height: 100px;
 	text-align: right;
-	padding-right: 6em;
+	padding-right: 15%;
 }
 .footer a{
 	padding:10px;
-	color: #BBB;
+	color: #AAA;
 	text-decoration: none;
 }
 .footer a:hover{
